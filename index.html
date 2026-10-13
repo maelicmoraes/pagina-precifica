@@ -191,12 +191,15 @@
   .price-card .sub{color:var(--text-gray);font-size:14px;margin-bottom:20px;}
   .price-card .old{color:var(--text-gray);text-decoration:line-through;font-size:14px;}
   .price-card .installment{font-size:30px;font-weight:800;margin:6px 0 2px;}
-  .price-card .installment span{font-size:14px;font-weight:600;color:var(--text-gray);}
+  .price-card .installment span{display:block;font-size:14px;font-weight:600;color:var(--text-gray);margin-top:2px;}
   .price-card .cash{font-size:14px;color:var(--text-gray);margin-bottom:20px;}
   .price-card ul{list-style:none;margin-bottom:28px;flex-grow:1;}
   .price-card li{font-size:14.5px;margin-bottom:10px;padding-left:22px;position:relative;color:#333;}
   .price-card li:before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800;}
-  .price-card .btn{width:100%;justify-content:center;}
+  .price-card .btn{width:100%;justify-content:center;text-align:center;}
+  .pricing-grid.single{grid-template-columns:minmax(0,540px);justify-content:center;}
+  .bonus-title{font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--green);margin:6px 0 12px;}
+  .bonus-list li:before{content:"+";}
   .payment-note{text-align:center;color:var(--text-gray);font-size:13px;margin-top:32px;}
 
   /* Guarantee */
@@ -414,43 +417,32 @@
 
 <section id="oferta">
   <div class="container">
-    <h2 class="center">Escolha sua oferta</h2>
+    <h2 class="center">Garanta o PRECIFICA e leve 5 bônus</h2>
     <p class="section-sub center">Chega de ter prejuízo! Com o PRECIFICA, você descobre em minutos quanto cobrar para ter lucro de verdade em cada serviço.</p>
 
-    <div class="pricing-grid">
-      <div class="price-card">
+    <div class="pricing-grid single">
+      <div class="price-card best">
+        <div class="best-badge">OFERTA ÚNICA</div>
         <div class="tag">Pagamento único</div>
         <h3>PRECIFICA</h3>
-        <div class="sub">Precificação de serviços e produtos</div>
-        <div class="old">De R$ 97</div>
-        <div class="installment">12x de R$ 6,20 <span>no cartão</span></div>
-        <div class="cash">ou R$ 59,90 à vista — pagamento único, sem mensalidade</div>
+        <div class="sub">App de precificação com acesso vitalício</div>
+        <div class="old">De R$ 197</div>
+        <div class="installment">12x de R$ 10,03 <span>no cartão</span></div>
+        <div class="cash">ou R$ 97,00 à vista — pagamento único, sem mensalidade</div>
         <ul>
-          <li>Use para sempre, sem mensalidade pesando no seu caixa</li>
-          <li>Pague uma vez e nunca mais pense nisso</li>
-          <li>Suporte técnico incluso, para tirar dúvidas quando precisar</li>
+          <li>Descubra o preço ideal e a margem de lucro real de cada procedimento</li>
+          <li>Acesso vitalício: pague uma vez e use para sempre</li>
           <li>Risco zero: 7 dias de garantia para testar sem compromisso</li>
         </ul>
-        <a href="https://pay.kiwify.com.br/1n3LY3e" class="btn btn-green">Quero o PRECIFICA</a>
-      </div>
-
-      <div class="price-card best">
-        <div class="best-badge">MELHOR OFERTA</div>
-        <div class="tag">Pagamento único</div>
-        <h3>PRECIFICA + Controle financeiro</h3>
-        <div class="sub">App PRECIFICA + Controle financeiro completo</div>
-        <div class="old">De R$ 247</div>
-        <div class="installment">12x de R$ 10,03 <span>no cartão</span></div>
-        <div class="cash">ou R$ 97,00 à vista — app + controle financeiro, pagamento único</div>
-        <ul>
-          <li>Precifique seus serviços para sempre com o app PRECIFICA</li>
-          <li>Veja exatamente para onde vai cada real do seu negócio, com o controle financeiro completo</li>
-          <li>Tire dúvidas comigo ao vivo, toda semana, incluso na oferta</li>
-          <li>Suporte técnico sempre que precisar</li>
-          <li>Risco zero: teste por 7 dias, sem compromisso</li>
+        <div class="bonus-title">Bônus incluídos</div>
+        <ul class="bonus-list">
+          <li><strong>Controle financeiro da empresa:</strong> veja para onde vai cada real do seu negócio</li>
+          <li><strong>Controle financeiro pessoal:</strong> organize as suas finanças pessoais</li>
+          <li><strong>Aulas ao vivo semanais:</strong> tire dúvidas comigo toda semana</li>
+          <li><strong>Suporte no WhatsApp:</strong> ajuda direta sempre que precisar</li>
+          <li><strong>Masterclass Black Friday Lucrativa:</strong> ao vivo, dia 28/11. Bônus por tempo limitado, garantido para quem comprar até essa data</li>
         </ul>
-        <p style="font-size:13px;font-weight:700;color:var(--green-dark);margin-bottom:14px;">BÔNUS por tempo limitado: Masterclass Black Friday Lucrativa — ao vivo, dia 19/10 às 19h. Exclusivo para quem comprar até lá.</p>
-        <a href="https://pay.kiwify.com.br/3J82fhz" class="btn btn-gold">Quero a melhor oferta</a>
+        <a href="https://pay.kiwify.com.br/3J82fhz" class="btn btn-gold">Quero o PRECIFICA com bônus</a>
       </div>
     </div>
 
